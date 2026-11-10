@@ -111,6 +111,39 @@ Figure 7. Calculation of chromosome-level sequencing coverage using Samtools cov
 Figure 8. Chromosome coverage output used for downstream relative-depth calculations in R.
 <img width="1793" height="878" alt="image" src="https://github.com/user-attachments/assets/fe45ede7-ee02-4584-8b54-a953fbbb55d7" />
 
+## Questions for the Report
+
+**1. What species did you choose, and what evidence supports a diploid XX/XY or ZZ/ZW system?**
+
+The selected species was *Drosophila virilis* (fruit fly), which has an XX/XY sex chromosome system. Females typically have two X chromosomes (XX), while males have one X and one Y chromosome (XY). Its chromosome-level reference assembly identifies chromosome X separately from the autosomes, supporting its classification as an XX/XY species.
+
+**2. What are your assembly accession, WGS run, and both BioSample accessions? Are the donors the same?**
+
+- Assembly accession: GCF_030788295.1
+- WGS run accession: SRR6399436
+- Assembly BioSample accession: SAMN35709873
+- WGS BioSample accession: SAMN08216748
+
+The donors are not confirmed to be the same because the assembly and WGS data have different BioSample accessions. However, both are associated with the same strain, 15010-1051.87.
+
+**3. Which sequences were used as autosomes and as X or Z? How did you verify their identities?**
+
+Chromosome X (NC_091543.1) was used as the sex chromosome, while chromosomes 2, 3, 4, 5, and 6 (NC_091544.1 to NC_091548.1) were used as autosomes. Their identities were verified using the NCBI assembly report and chromosome annotations of *Drosophila virilis*. Unplaced scaffolds and mitochondrial sequences were excluded from the primary analysis.
+
+**4. What are the median autosomal depth, X:A or Z:A ratio, and inferred sex-chromosome complement?**
+
+The median autosomal mean depth was approximately 7.04858, based on chromosomes 2, 3, 4, 5, and 6. The mean autosomal depth was approximately 6.57621, while the X chromosome mean depth was 3.59703. This resulted in an X:A ratio of approximately 0.547.
+
+The ratio is close to 0.5, suggesting one X chromosome relative to two copies of the autosomes. Therefore, the inferred sex-chromosome complement is XY, consistent with a male individual.
+
+**5. Does your result agree with the recorded sex of the WGS donor, if reported? Explain any discrepancy or uncertainty.**
+
+Yes. The inferred XY complement agrees with the recorded male sex of the WGS donor in NCBI BioSample SAMN08216748. However, this inference is based on relative sequencing depth and does not directly confirm the presence of a Y chromosome. Differences in coverage, mapping bias, and the use of an assembly from a different BioSample may introduce uncertainty.
+
+**6. Why is a chromosome-level assembly alone insufficient for a reliable read-depth sex inference?**
+
+A chromosome-level assembly provides the reference sequences and chromosome identities, but it does not provide information about the actual sequencing depth of an individual sample. Reliable sex inference requires sequencing reads from a known biological sample, alignment of those reads to the reference genome, and comparison of coverage between the sex chromosome and autosomes. Factors such as sequencing depth, mapping bias, repetitive regions, and differences between the reference assembly donor and WGS donor can also affect the results.
+
 
 ## References
 
