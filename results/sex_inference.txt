@@ -1,0 +1,33 @@
+SEX-CHROMOSOME DOSAGE ANALYSIS
+Species: Drosophila virilis
+
+WGS INFORMATION
+Run accession: SRR6399436
+WGS BioSample: SAMN08216748
+Recorded sample sex: Male
+Strain: 15010-1051.87
+
+ASSEMBLY INFORMATION
+Assembly accession: GCF_030788295.1
+Assembly BioSample: SAMN35709873
+Recorded assembly donor sex: Male
+The assembly and WGS data have different BioSample accessions.
+They are from the same recorded strain, but are not confirmed to be the same individual.
+
+CHROMOSOME DEPTH RESULTS
+
+SENSITIVITY CHECK EXCLUDING CHROMOSOME 6
+
+SEX-CHROMOSOME DOSAGE INTERPRETATION
+The result is consistent with the recorded male sex of the WGS sample.
+
+BIOLOGICAL NOTE
+Drosophila uses the X-to-autosome ratio in sex determination.
+The Y chromosome is primarily important for male fertility.
+
+LIMITATIONS
+1. The assembly and WGS sample have different BioSample accessions.
+2. Mapping bias and repetitive sequences may affect read depth.
+3. Chromosome 6 has lower coverage than the other autosomes.
+4. Relative depth estimates chromosome dosage but does not independently confirm biological sex.
+5. The thresholds are simplified classroom interpretation guidelines.
